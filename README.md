@@ -26,7 +26,11 @@ Mostrar como o campo contribui com a produção de recursos essenciais para a ci
 
 - **Q:** Abrir inventário
 
-- **ESPAÇO:** Disparar projétil
+- **M:** Abir tela de missoes
+
+- **R:** Pular dialogos
+
+- **Clique com mouse esquerdo:** Disparar projétil
 
 ## **Critérios Atendidos**
 - **Complexidade:** Jogo completo com sistema de combate, inventário, economia (vendas e compras), menu e movimentação contínua.
