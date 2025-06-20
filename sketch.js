@@ -571,7 +571,7 @@ function preload() {
     bossSprites.touro.ataque2.push(loadImage("Imagem/Boss/pixil-frame-20.png"));
     imgFinalContrato = loadImage("Imagem/Pacote Extra/Contrato PixelArt.png");
     imgFinalJornal = loadImage("Imagem/Pacote Extra/Jornal PixelArt.png");
-    imgFinalPoster = loadImage("Imagem/Pacote Extra/Poster Jornal PixelArt.png");
+    imgFinalPoster = loadImage("Imagem/Pacote Extra/PosterJornal PixelArt.png");
     somTiro = loadSound("SOM/Player tiro som.wav");
     somDano = loadSound("SOM/Player Som/Dano.wav");
     somTornado = loadSound("SOM/Boss SOM/Tornado corvo.wav");
