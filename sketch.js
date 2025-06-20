@@ -258,7 +258,7 @@ const npcFalas = {
 };
 
 // Imagens finais
-let imgFinalContrato, imgFinalJornal, imgFinalPoster;
+let imgFinalContrato, imgFinalJornal;
 let finalImagemIndex = 0;
 let finalImagemTimer = 0;
 const finalImagemDuracao = 12000; // 12 segundos
@@ -570,8 +570,7 @@ function preload() {
     bossSprites.touro.ataque2.push(loadImage("Imagem/Boss/pixil-frame-19.png"));
     bossSprites.touro.ataque2.push(loadImage("Imagem/Boss/pixil-frame-20.png"));
     imgFinalContrato = loadImage("Imagem/Pacote Extra/Contrato PixelArt.png");
-    imgFinalJornal = loadImage("Imagem/Pacote Extra/PosterJornal-PixelArt.png");
-    imgFinalPoster = loadImage("Imagem/Pacote Extra/PosterJornal-PixelArt.png");
+    imgFinalJornal = loadImage("Imagem/Pacote Extra/Jornal PixelArt.png");
     somTiro = loadSound("SOM/Player tiro som.wav");
     somDano = loadSound("SOM/Player Som/Dano.wav");
     somTornado = loadSound("SOM/Boss SOM/Tornado corvo.wav");
@@ -2246,7 +2245,6 @@ function mostrarTelaFinalImagens() {
             let img = null;
             if (finalImagemIndex === 0) img = imgFinalContrato;
             else if (finalImagemIndex === 1) img = imgFinalJornal;
-            else if (finalImagemIndex === 2) img = imgFinalPoster;
             if (img) {
                 imageMode(CENTER);
                 image(img, width/2, height/2, min(width, img.width), min(height, img.height));
@@ -2260,7 +2258,7 @@ function mostrarTelaFinalImagens() {
             finalImagemPiscaTimer = 0;
             finalImagemIndex++;
             finalImagemTimer = 0;
-            if (finalImagemIndex > 2) {
+            if (finalImagemIndex > 1) {
                 // Em vez de voltar ao menu, vai para a tela de agradecimento
                 tela = "agradecimento_final";
                 agradecimentoFinalMostrado = true;
@@ -2277,7 +2275,6 @@ function mostrarTelaFinalImagens() {
     let img = null;
     if (finalImagemIndex === 0) img = imgFinalContrato;
     else if (finalImagemIndex === 1) img = imgFinalJornal;
-    else if (finalImagemIndex === 2) img = imgFinalPoster;
     if (img) {
         imageMode(CENTER);
         image(img, width/2, height/2, min(width, img.width), min(height, img.height));
